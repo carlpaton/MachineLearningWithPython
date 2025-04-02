@@ -6,6 +6,7 @@ Machine learning is a subset of artificial intelligence (AI)
 - [Tools and Libraries](./docs/tools_and_libraries.md)
 - [Hello World - The basics](./docs/helloworld.md)
 - [Code with Mosh - Training and Persisting models](./docs/codewithmosh.md)
+- [Code with Mosh - Visualizing Decision Tree](./docs/visualizing-decision-tree.md)
 
 ## References
 
