@@ -2,7 +2,44 @@
 
 Following [tutorial from Mosh](https://www.youtube.com/watch?v=7eh4d6sabA0) these are my notes with updates for 2025 version of the libraries
 
-# Calculating The Accuracy
+## Persisting Models
+
+Save the model once trained
+
+```python
+import pandas as pd
+from sklearn.tree import DecisionTreeClassifier
+import joblib
+
+music_data = pd.read_csv('music.csv')
+X = music_data.drop(columns=['genre']) 
+y = music_data['genre']
+
+# create, train and save model
+model = DecisionTreeClassifier()
+model.fit(X.values, y)
+joblib.dump(model, 'music.joblib')
+
+# OUTPUTS: this file `music.joblib` is then persisted in the same directory as the Juypter notebook
+# ['music.joblib']
+```
+
+Load up the model and make a prediction
+
+```python
+import joblib
+
+model = joblib.load('music.joblib')
+
+# [21,1] is 21 year old male
+predictions = model.predict([[21,1]])
+predictions
+
+# OUTPUTS: this is expected based on the music.csv file
+# array(['HipHop'], dtype=object)
+```
+
+## Calculating The Accuracy
 
 We should allocate 70, 80% of the data for training and use the remaining as testing
 
