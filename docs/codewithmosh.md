@@ -6,6 +6,8 @@ Following [tutorial from Mosh](https://www.youtube.com/watch?v=7eh4d6sabA0) thes
 
 Save the model once trained
 
+- https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html
+
 ```python
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier

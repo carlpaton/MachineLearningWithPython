@@ -14,6 +14,8 @@ Common workflows include
   - you dont always remove, you could just assign a default value
   - text based data needs to be represented by numerical values, example 0 for girl and 1 for boy, although in 2025 you could have -1 for cat 🐈
 - **Split the data** into _training_ and _test_ sets, example 70% train and 30% test
+  - training input data by convention is `X`
+  - testing output data by convention is `y`
 - **Create model** by seleting and algorithm to analyze the data
 - **Train the model** by fitting the training data, it looks for patterns in the data
 - **Make predictions** by passing test data and examining the output
@@ -39,3 +41,10 @@ There are many and certain `input data` / `problem you're trying to solve` work 
 This list came from https://www.tutorialspoint.com/machine_learning/index.htm
 
 Scikit-learn has a cheat sheet https://scikit-learn.org/stable/machine_learning_map.html
+
+## Glossary Of Terms
+
+- **[label](https://developers.google.com/machine-learning/glossary#label)**, In supervised machine learning, the "answer" or "result" portion of an example.
+- **[feature](https://developers.google.com/machine-learning/glossary#feature)**, An input variable to a machine learning model.
+
+Google has an extensive glossary here https://developers.google.com/machine-learning/glossary
