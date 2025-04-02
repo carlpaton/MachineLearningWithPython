@@ -6,10 +6,6 @@ This example uses ResNet but others exist like VGG and Inception.
 
 See [tools and libraries](../docs/tools_and_libraries.md) to see what libraries are needed.
 
-## Training Data
-
-[Agricultural crops image classification](https://www.kaggle.com/datasets/mdwaquarazam/agricultural-crops-image-classification)
-
 ## Import Modules
 
 Tensorflow is a comprehensive open source platform for machine learning, it provides the tools to build machine learning applications.
@@ -25,4 +21,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 import splitfolders
 import cv2
+```
+
+## Folders And Training Data
+
+Download the sample [Agricultural crops image classification](https://www.kaggle.com/datasets/mdwaquarazam/agricultural-crops-image-classification) images and place them in the `input_folder`
+
+```python
+input_folder = '/Users/Gordon Freeman/ml-notebooks/Agricultural-crops'
+output_folder = '/Users/Gordon Freeman/ml-notebooks/ImageRecognition'
 ```
