@@ -21,9 +21,13 @@
 
 - Install Anaconda, I still needed to manually install Jupyter and required libraries
 ```
-pip install notebook
-pip install pandas
-pip install sklearn
+--- text classification
+pip install notebook pandas sklearn
+
+--- image recognition
+pip install tensorflow       (this installed keras)
+pip install split-folders opencv-python 
+pip install matplotlib
 ```
 - Run notebook server, this should open http://localhost:8888/tree as the Jupyter dashboard
 ```
