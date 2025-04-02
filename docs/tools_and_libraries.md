@@ -23,6 +23,7 @@
 ```
 pip install notebook
 pip install pandas
+pip install sklearn
 ```
 - Run notebook server, this should open http://localhost:8888/tree as the Jupyter dashboard
 ```
@@ -39,3 +40,4 @@ Command mode (press ESC to enable)
 - `a`, insert a new cell above
 - `d d`, delete cell
 - `SHIFT TAB` on a method to show its tooltip
+- `CTRL ENTER` with cell active, runs just that cell and doesnt add a new cell below

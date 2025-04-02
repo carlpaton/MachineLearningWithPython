@@ -25,8 +25,8 @@ Common workflows include
 
 There are many and certain `input data` / `problem you're trying to solve` work better with different algorithms, there are always pros and cons in terms of accuracy and performance.
 
+- **Decision Trees**, https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html
 - **Linear regression**, used to predict the value of a variable based on the value of another variable.
-- **Decision Trees**
 - **Neural Networks**
 
 Scikit-learn has a cheat sheet https://scikit-learn.org/stable/machine_learning_map.html
