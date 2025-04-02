@@ -4,7 +4,7 @@ Deep learning is a subset of machine learning that involves algorithms inspired 
 
 This example uses ResNet but others exist like VGG and Inception.
 
-See [tools and libraries](../docs/tools_and_libraries.md) to see what libraries are needed.
+See the [prerequisites here](../docs/tools_and_libraries.md#prerequisites) to see what libraries I installed. Sometimes the `import/from` names are slighty different from the `install`.
 
 ## Import Modules
 

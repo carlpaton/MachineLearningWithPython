@@ -25,8 +25,17 @@ Common workflows include
 
 There are many and certain `input data` / `problem you're trying to solve` work better with different algorithms, there are always pros and cons in terms of accuracy and performance.
 
-- **Decision Trees**, https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html
-- **Linear regression**, used to predict the value of a variable based on the value of another variable.
-- **Neural Networks**
+- **Decision trees**:   
+  - Used to classify data and predict numbers using a tree-like structure. They are easy to check and understand.
+  - https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html
+- **Neural networks**: 
+  - It works like the human brain with many connected nodes. They help to find patterns and are used in language processing, image and speech recognition, and creating images.
+  - https://www.tensorflow.org/api_docs/python/tf/keras/applications/ResNet50
+- **Linear regression**: It predicts numbers based on past data. For example, it helps estimate house prices in an area.
+- **Logistic regression**: It predicts like "yes/no" answers and it is useful for spam detection and quality control.
+- **Clustering**: It is used to group similar data without instructions and it helps to find patterns that humans might miss.
+- **Random forests**: They combine multiple decision trees to improve predictions.
+
+This list came from https://www.tutorialspoint.com/machine_learning/index.htm
 
 Scikit-learn has a cheat sheet https://scikit-learn.org/stable/machine_learning_map.html
