@@ -289,3 +289,17 @@ predict_img(
 ```python
 model.save('Agricultural-crops.keras')
 ```
+
+## Fine tune base model
+
+The steps above have already frozen the convoltional base with of the ResNet50 model with `base_model.trainable=False`
+
+Performance when using a substantial dataset can be tweaked as follows
+
+- Use `linear rate scheduler` to help reduce the learning rate during training which could help with fine tuning
+  - https://pytorch.org/docs/stable/generated/torch.optim.lr_scheduler.LinearLR.html
+- Use `early stopping` which can prevent over fitting by stopping the training process with validation loss stops improving
+- Use more `data augmentation`, some parameters were already applied above but we can also adjust things like `brightness` and or `contrast` of the images
+- Use `batch normalization`
+- If there is a lot of overfitting, try `L2 regularization`
+  - L2 regularization, also known as ridge regression, is a technique used to prevent overfitting in machine learning models by adding a penalty term to the loss function that encourages small weights, thus preventing any single feature from dominating the prediction. 
