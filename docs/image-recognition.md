@@ -292,6 +292,15 @@ This is how `Keras/TensorFlow` models need to be saved because they it saves the
 model.save('Agricultural-crops.keras')
 ```
 
+Then to load the model
+
+```python
+import tensorflow as tf
+from tensorflow import keras
+
+loaded_model = keras.models.load_model('Agricultural-crops.keras')
+```
+
 ## Fine tune base model
 
 The steps above have already frozen the convoltional base with of the ResNet50 model with `base_model.trainable=False`
