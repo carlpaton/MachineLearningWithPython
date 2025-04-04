@@ -222,7 +222,11 @@ So in theory more epochs means the model gets smarter, based on the testing done
 
 ## Classes Dictionary
 
-There are 30 classes in the test dataset, so we need a dictionary of the classes, we need this to convert the index of the predicted class back to a human readable name.
+There are 30 classes in the test dataset, so we need a dictionary of the classes, we need this to convert the index of the predicted class back to a human readable name. 
+
+The `class_names` dictionary is ordered based on the alphabetical order of the subdirectories within the `train` directory. When `ImageDataGenerator.flow_from_directory` creates the data generators, it assigns class labels based on the order it encounters the subdirectories.
+
+The capital letters `Cherry`, `Coffee-plant` ect come first because of ASCII Encoding, in the ASCII table, uppercase letters (A-Z) have lower numerical values than lowercase letters (a-z).
 
 ```python
 class_names = {
