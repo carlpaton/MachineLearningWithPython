@@ -276,20 +276,38 @@ def predict_img(image, model):
     print(class_names[r])
 ```
 
+Here `result` holds a NumPy array representing the predicted probabilities for each class. Based on the test the model was trained with it's a 2D array with a shape of (1, 30), meaning there's one set of predictions for 30 classes. Each element in the inner array, the row, corresponds to the probability assigned to a specific class by the ResNet50 model. Example:
+
+```
+[[1.5529968e-09, 1.1064818e-10, 5.1037347e-07, 2.0264308e-07, 2.4747135e-10,
+  5.1611714e-06, 3.8424001e-05, 1.8269266e-06, 2.2718586e-08, 2.3780316e-05,
+  1.7572886e-04, 3.5843262e-03, 4.7413833e-09, 7.7462579e-09, 3.6084236e-09,
+  1.3875705e-08, 2.2285940e-05, 1.8718431e-09, 1.9396311e-05, 4.9454596e-09,
+  2.1976004e-07, 6.3750173e-07, 9.9265128e-01, 3.2561817e-04, 7.0873526e-04,
+  9.5845829e-09, 3.0158913e-07, 3.3152268e-08, 4.2190831e-04, 2.0195136e-03]] 
+```
+
+Then `r` results based on the np.argmax() function from the NumPy library is used to find the index of the maximum value within an array. The largest value is `9.9265128e-01` (approximately 0.99265) which is located at index `22`
+
+Probabilities range from 0 to 1, where 0 means **impossible** and 1 means **certain**, to convert a probability to a percentage, you simply multiply it by 100.
+
+Therefore, the model is predicting that there's **approximately** a `99.27%` probability that the image belongs to the class represented by index 22.
+
 **Test the function**
 
 ```python
 predict_img(
-    '/Users/Gordon Freeman/ml-notebooks/Agricultural-crops/Coffee-plant/images62.jpg',
+    '/Users/Gordon Freeman/ml-notebooks/Agricultural-crops/rice/image (2).jpeg',
     model
 )
 
 # OUTPUT
 # 1/1 ━━━━━━━━━━━━━━━━━━━━ 2s 2s/step
 # Cherry           ~ this was test accuracy: 58.10% and epochs=4
+#                   ~ so FAILURE was entirely possible
 
 # 1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 125ms/step
-# Coffee-plant     ~ this was test accuracy: 81.90% and epochs=100
+# rice             ~ this was test accuracy: 81.90% and epochs=100
 ```
 
 ## Persist the model
