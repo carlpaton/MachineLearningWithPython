@@ -209,7 +209,8 @@ print(f'Test Accuracy: {test_accuracy * 100:.2f}%')
 
 # OUTPUT
 # Test Accuracy: 22.86%   ~ with `epochs=1`
-# Test Accuracy: 58.10%   ~ with `epochs=4` 
+# Test Accuracy: 58.10%   ~ with `epochs=4`
+# Test Accuracy: 81.90%   ~ with `epochs=100`
 ```
 
 So in theory more epochs means the model gets smarter, based on the testing done by Karina the results were:
@@ -281,7 +282,10 @@ predict_img(
 
 # OUTPUT
 # 1/1 ━━━━━━━━━━━━━━━━━━━━ 2s 2s/step
-# Cherry
+# Cherry           ~ this was test accuracy: 58.10% and epochs=4
+
+# 1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 125ms/step
+# Coffee-plant     ~ this was test accuracy: 81.90% and epochs=100
 ```
 
 ## Persist the model
