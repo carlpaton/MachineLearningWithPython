@@ -286,6 +286,8 @@ predict_img(
 
 ## Persist the model
 
+This is how `Keras/TensorFlow` models need to be saved because they it saves the model's architecture (the structure of the network), its weights (the learned parameters), and its optimizer state (how the model was trained). It preserves all aspects of the model, including custom layers and loss functions.
+
 ```python
 model.save('Agricultural-crops.keras')
 ```

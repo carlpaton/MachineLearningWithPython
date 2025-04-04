@@ -4,7 +4,7 @@ Following [tutorial from Mosh](https://www.youtube.com/watch?v=7eh4d6sabA0) thes
 
 ## Persisting Models
 
-Save the model once trained
+Save the model once trained, Scikit-learn models rely heavily on numpy arrays and Joblib is optimized to handle numpy arrays. This save routine is commonly used for scikit-learn models like `DecisionTreeClassifier` (used here), `RandomForestClassifier`, `SVM`, etc.
 
 - https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html
 
