@@ -14,7 +14,7 @@ Machine learning is a subset of artificial intelligence (AI)
 **References**
 - [Programming with Mosh: Python Machine Learning Tutorial (Data Science)](https://www.youtube.com/watch?v=7eh4d6sabA0)
 
-## Image Recognition: Pre-trained ResNet Model Example
+## Image Classification: Pre-trained ResNet Model Example
 
 - [Image Recognition](./docs/image-recognition.md)
 
