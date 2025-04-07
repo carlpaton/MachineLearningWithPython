@@ -3,6 +3,9 @@
 - Jupyter 
   - Integrated development environment (IDE) where you type your code https://jupyter.org/
   - It lets you execute partial lines of the code which is useful for ML
+```
+pip install notebook
+```
 - Scikit-learn library
   - Provides common algorithms
 - Numpy library
