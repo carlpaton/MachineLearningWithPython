@@ -40,4 +40,4 @@ If `right->false` the user is older than 30, then the gender of music is Classic
 
 If `left->true` then check then we check the age again, I would have thought here there would be a gender check but meh, it checks age, goes left/right again and then checks gender, all the while doing classification.
 
-![](image.png)
+![](./../reports/music.png)
