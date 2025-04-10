@@ -27,6 +27,8 @@ Common workflows include
 
 There are many and certain `input data` / `problem you're trying to solve` work better with different algorithms, there are always pros and cons in terms of accuracy and performance.
 
+![This image came from Infinite Codes](./algorithms.jpg)
+
 - **Decision trees**:   
   - Used to classify data and predict numbers using a tree-like structure. They are easy to check and understand.
   - https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html
