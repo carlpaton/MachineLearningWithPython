@@ -5,6 +5,7 @@ Machine learning is a subset of artificial intelligence (AI)
 - [Foundation](./docs/foundation.md)
 - [Tools and Libraries](./docs/tools_and_libraries.md)
 - [Hello World - The basics](./docs/helloworld.md)
+- [Load Persisted Model](./models/readme.md)
 
 Turns out there are a few ML Algorithms and we need to choose the right one for our problem, Infinite Codes talks about using the right loss function for the algorithm, I liked the format and the visulisation of the algorithm on the left.
 
