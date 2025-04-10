@@ -46,7 +46,9 @@ Scikit-learn has a cheat sheet https://scikit-learn.org/stable/machine_learning_
 
 ## Glossary Of Terms
 
-- **[label](https://developers.google.com/machine-learning/glossary#label)**, In supervised machine learning, the "answer" or "result" portion of an example.
-- **[feature](https://developers.google.com/machine-learning/glossary#feature)**, An input variable to a machine learning model.
+- **[label](https://developers.google.com/machine-learning/glossary#label)**; In supervised machine learning, the "answer" or "result" portion of an example.
+- **[feature](https://developers.google.com/machine-learning/glossary#feature)**; An input variable to a machine learning model.
+- **over fitting**; training performance is good but validation performance is poor
+- **under fitting**; both training performance and validation performance are poor
 
 Google has an extensive glossary here https://developers.google.com/machine-learning/glossary

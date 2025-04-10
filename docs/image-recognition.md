@@ -180,8 +180,7 @@ Also see https://keras.io/api/optimizers/adam/
 
 ## Fitting the model
 
-- **over fitting**; training performance is good but validation performance is poor
-- **under fitting**; both training performance and validation performance are poor
+Issues like [over fitting/under fitting](./foundation.md#glossary-of-terms) exist
 
 ```python
 model.fit(
