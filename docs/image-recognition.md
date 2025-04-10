@@ -168,7 +168,9 @@ model.compile(
 
     loss='categorical_crossentropy', # loss functions in ml measure how well the models prediction matches the true actual values
                                      # during training the optimizer tries to minimize the loss
-                                     # other loss functions like `Mean Squared Error (MSE)` exist
+                                     # other loss functions exist such as
+                                     # - `Mean Squared Error (MSE)`
+                                     # - `Cross-Entropy Loss`
 
     metrics=['accuracy']             # metrics evaluate the performance of the model
 )
